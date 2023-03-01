@@ -1,0 +1,487 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "trivia gameshow",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AddPlayerIntent",
+          "slots": [
+            {
+              "name": "color",
+              "type": "AMAZON.Color"
+            }
+          ],
+          "samples": [
+            "but i want to {color}",
+            "hello im sorry i want to get {color}",
+            "i like to {color}",
+            "{color} would be fine",
+            "i like being {color}",
+            "{color} will be fine",
+            "i like to play with {color}",
+            "i have a {color}",
+            "but i like {color}",
+            "hi i like {color}",
+            "hello i like {color}",
+            "hi i want {color}",
+            "but i am {color}",
+            "i want {color}",
+            "is there {color}",
+            "can i have {color}",
+            "{color} would be nice",
+            "i like to play as {color}",
+            "i like {color}",
+            "i want to play as {color}",
+            "i want to play {color}",
+            "my favourite color is {color} ",
+            "hello i want {color}",
+            "but i want {color}",
+            "i am {color}",
+            "hi i am {color}",
+            "hi i\u0027m {color}",
+            "my favourite is {color} ",
+            "i\u0027m {color}",
+            "my color is {color}",
+            "{color}"
+          ]
+        },
+        {
+          "name": "NumberOfPlayersIntent",
+          "slots": [
+            {
+              "name": "count",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{count} player",
+            "{count} people",
+            "play {count}",
+            "we {count}",
+            "we play {count}",
+            "were {count} players",
+            "were {count}",
+            "we are {count} people",
+            "we are {count} player",
+            "we play as {count}",
+            "{count}",
+            "We are {count}"
+          ]
+        },
+        {
+          "name": "SetDifficultyIntent",
+          "slots": [
+            {
+              "name": "difficulty",
+              "type": "difficulty"
+            }
+          ],
+          "samples": [
+            "play a {difficulty} game",
+            "it should be {difficulty}",
+            "i want a {difficulty} game",
+            "we want to play with the {difficulty}",
+            "{difficulty}",
+            "please set it up to {difficulty}",
+            "on {difficulty}",
+            "we want to play on {difficulty}",
+            "please set the difficulty to {difficulty}",
+            "please set it to {difficulty}",
+            "the difficulty should be {difficulty}"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "SelectCategoryIntent",
+          "slots": [
+            {
+              "name": "categoryname",
+              "type": "categoryname"
+            }
+          ],
+          "samples": [
+            "{categoryname} category",
+            "{categoryname} categories",
+            "{categoryname} is what we want",
+            "{categoryname}",
+            "i want to use {categoryname}",
+            "we only want to use {categoryname}",
+            "all of them",
+            "we want to use {categoryname}"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "answerSlot",
+              "type": "answer"
+            }
+          ],
+          "samples": [
+            "{answerSlot} is my answer",
+            "i think it is {answerSlot}",
+            "i think it\u0027s {answerSlot}",
+            "maybe {answerSlot}",
+            "it could be {answerSlot}",
+            "i think {answerSlot}",
+            "{answerSlot}",
+            "the answer is {answerSlot}"
+          ]
+        },
+        {
+          "name": "ready",
+          "slots": [],
+          "samples": [
+            "im ready to play",
+            "yes i am ready to start the game",
+            "yes i am ready to play the game",
+            "we are ready",
+            "i\u0027m ready",
+            "yes i am ready",
+            "i am ready",
+            "ready"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "hard",
+              "name": {
+                "value": "hard",
+                "synonyms": [
+                  "as hard as possible",
+                  "very hard",
+                  "extreme",
+                  "intense",
+                  "unrelenting",
+                  "unmerciful",
+                  "rough",
+                  "oppressive",
+                  "grinding",
+                  "harshly",
+                  "harsh",
+                  "forbidden",
+                  "forbidding",
+                  "burdensome",
+                  "unendurable",
+                  "exhausting",
+                  "tough",
+                  "severe"
+                ]
+              }
+            },
+            {
+              "id": "medium",
+              "name": {
+                "value": "medium",
+                "synonyms": [
+                  "not that hard",
+                  "mediocre",
+                  "mean",
+                  "average",
+                  "everyday",
+                  "common",
+                  "middle hard",
+                  "ordinary",
+                  "middling",
+                  "reasonable",
+                  "fair",
+                  "acceptable",
+                  "passable",
+                  "tolerable",
+                  "middle"
+                ]
+              }
+            },
+            {
+              "id": "easy",
+              "name": {
+                "value": "easy",
+                "synonyms": [
+                  "chill",
+                  "easy-peasy",
+                  "effortless",
+                  "comfortable",
+                  "cosy",
+                  "relaxed",
+                  "free"
+                ]
+              }
+            }
+          ],
+          "name": "difficulty"
+        },
+        {
+          "values": [
+            {
+              "id": "all",
+              "name": {
+                "value": "all",
+                "synonyms": [
+                  "all of them",
+                  "everything"
+                ]
+              }
+            },
+            {
+              "id": "SportsandHobbies",
+              "name": {
+                "value": "Sports and Hobbies",
+                "synonyms": [
+                  "Sports",
+                  "Sport",
+                  "Hobbies",
+                  "Hobby"
+                ]
+              }
+            },
+            {
+              "id": "Geography",
+              "name": {
+                "value": "Geography",
+                "synonyms": [
+                  "Countries",
+                  "Geo"
+                ]
+              }
+            },
+            {
+              "id": "Art",
+              "name": {
+                "value": "Art",
+                "synonyms": [
+                  "Paintings",
+                  "Painters",
+                  "Paint"
+                ]
+              }
+            },
+            {
+              "id": "History",
+              "name": {
+                "value": "History",
+                "synonyms": [
+                  "Ancient knowldege",
+                  "Time"
+                ]
+              }
+            },
+            {
+              "id": "Science",
+              "name": {
+                "value": "Science",
+                "synonyms": [
+                  "Chemistry",
+                  "Biology",
+                  "Physics",
+                  "Nature"
+                ]
+              }
+            },
+            {
+              "id": "Entertainment",
+              "name": {
+                "value": "Entertainment",
+                "synonyms": [
+                  "Fun",
+                  "Celebrities",
+                  "Movies",
+                  "Stars",
+                  "Netflix"
+                ]
+              }
+            }
+          ],
+          "name": "categoryname"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "I don\u0027t know",
+                "synonyms": [
+                  "i do not have the knowledge",
+                  "I do not know",
+                  "I\u0027m not sure",
+                  "i have no idea"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "D",
+                "synonyms": [
+                  "d",
+                  "last",
+                  "fourth"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "C",
+                "synonyms": [
+                  "c",
+                  "third"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "B",
+                "synonyms": [
+                  "b",
+                  "second"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "A",
+                "synonyms": [
+                  "a",
+                  "first"
+                ]
+              }
+            }
+          ],
+          "name": "answer"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "lightblue",
+                "synonyms": [
+                  "cyan",
+                  "sapphire",
+                  "sky"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "yellow",
+                "synonyms": [
+                  "blonde",
+                  "lemon",
+                  "gold"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "red",
+                "synonyms": [
+                  "berry",
+                  "scarlet",
+                  "rose"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "purple",
+                "synonyms": [
+                  "lavender",
+                  "violet",
+                  "lilac"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "pink",
+                "synonyms": [
+                  "magenta",
+                  "bubblegum",
+                  "rouge"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "grey",
+                "synonyms": [
+                  "ash",
+                  "shadow",
+                  "gray"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "orange",
+                "synonyms": [
+                  "fire",
+                  "bronze",
+                  "fire"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "green",
+                "synonyms": [
+                  "sage",
+                  "olive",
+                  "lime"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "darkblue",
+                "synonyms": [
+                  "navy",
+                  "blue",
+                  "azure"
+                ]
+              }
+            }
+          ],
+          "name": "AMAZON.Color"
+        }
+      ]
+    }
+  },
+  "version": "16"
+}
